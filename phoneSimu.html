@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhoneSimu</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body align="center">
+
+<div class="iphoneBorder">
+    <input type=text id="iphoneDisplay" value="">
+    <button class="button buttonIphone" id="On/Off" onclick="iphone.pressOnOff()">On/Off</button>
+    <button class="button buttonIphone" id="Battery" onclick="iphone.getBattery()">Battery</button>
+    <button class="button buttonIphone" id="Sent" onclick="iphone.sendMessage(nokia)">Sent</button>
+    <button class="button buttonIphone" id="Write" onclick="iphone.writeMess(document.getElementById('iphoneDisplay').value)">Write
+    </button>
+    <button class="button buttonIphone" id="Charge" onclick="iphone.charge()">Charge</button>
+    <button class="button buttonIphone" id="Inbox" onclick="iphone.getInbox()">InBox</button>
+    <button class="button buttonIphone" id="Outbox" onclick="iphone.getOutbox()">OutBox</button>
+</div>
+<br><br>
+<div class="nokiaBorder">
+    <table class="displayResult">
+        <tr>
+            <td><input type=text id="nDisplay"></td>
+        </tr>
+    </table>
+    <button class="button buttonNokia" id="On/OffNokia" onclick="nokia.pressOnOff()">On/Off</button>
+    <button class="button buttonNokia" id="BatteryNokia" onclick="nokia.getBattery()">Battery</button>
+    <button class="button buttonNokia" id="SentNokia" onclick="nokia.sendMessage(iphone)">Sent</button>
+    <button class="button buttonNokia" id="WriteNokia" onclick="nokia.writeMess()">Write</button>
+    <button class="button buttonNokia" id="ChargeNokia" onclick="nokia.charge()">Charge</button>
+    <button class="button buttonNokia" id="InboxNokia" onclick="nokia.getInbox()">InBox</button>
+    <button class="button buttonNokia" id="OutboxNokia" onclick="nokia.getOutbox()">OutBox</button>
+</div>
+
+<script src="functions.js"></script>
+</body>
+</html>
